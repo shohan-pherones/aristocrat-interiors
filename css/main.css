@@ -375,3 +375,47 @@ img {
   flex-direction: column;
   gap: 0.5rem;
 }
+
+.designs__features__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+.designs__feature__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+
+.designs__feature__item:nth-child(2n) > .designs__feature__item__img {
+  order: 1;
+}
+
+.designs__feature__item__img {
+  height: 80rem;
+  overflow: hidden;
+}
+
+.designs__feature__item__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.designs__features__item__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2.5rem;
+}
+
+.designs__features__item__contents > span {
+  font-size: 25rem;
+  font-weight: 800;
+  color: var(--color-gray);
+}
+
+.designs__features__item__contents > p {
+  opacity: 75%;
+}
