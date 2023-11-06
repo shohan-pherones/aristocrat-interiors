@@ -228,6 +228,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .hero__right > img {
@@ -625,4 +626,25 @@ img {
 .form__control > input:focus,
 .form__control > textarea:focus {
   border-color: var(--color-blue);
+}
+
+/* Footer styles */
+.footer {
+  background-color: var(--color-gray);
+  padding: 16rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5rem;
+  opacity: 75%;
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.footer__item:not(:first-child) > p {
+  font-weight: 600;
 }
